@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template, make_response
 app = Flask(__name__,)
-app.static_folder = 'static'
 
 frettir = [
     ["0","Má rannsaka innihald farsíma",
@@ -35,5 +34,5 @@ def not_found(error):
     return resp
 
 if __name__ == '__main__':
-    #app.run(debug=True, use_reloader=True)
     app.run()
+    #app.run(debug=True, use_reloader=True)
