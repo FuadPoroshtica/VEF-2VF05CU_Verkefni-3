@@ -1,2 +1,4 @@
 Flask
 gunicorn
+render_template
+make_response
