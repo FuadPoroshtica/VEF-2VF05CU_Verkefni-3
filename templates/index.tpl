@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %} nyfrettir {% endblock %}
+{% block title %} FrettirDagsins {% endblock %}
 
 {% block head %}
     {{ super() }}
@@ -16,7 +16,7 @@
             <img src='/static/mynd0.jpg'/>
         </section>
         <section class="top2em">
-            <h3>nyfréttir dagsins</h3>
+            <h3>Fréttir Dagsins</h3>
             <ul>
                 {% for item in frettir %}
                     <li><a href='/frett/{{ item[0] }}'>{{ item[1] }}</a> </li>
